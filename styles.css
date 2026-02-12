@@ -69,6 +69,33 @@ section {
     color: var(--teal);
 }
 
+.link__hover-effect {
+    position: relative;
+}
+
+.link__hover-effect--white:after {
+    background-color: white;
+}
+
+.link__hover-effect--black:after {
+    background-color: var(--text);
+}
+
+.link__hover-effect:after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    height: 2px;
+    width: 0;
+    right: 0;
+    border-radius: 3px;
+    transition: all 400ms ease;
+}
+
+.link__hover-effect:hover:after {
+    left: 0;
+    width: 100%;
+}
 
 
 /* 
